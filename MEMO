@@ -1,0 +1,25 @@
+
+
+data_proxy.js
+
+const defaultSettings = {
+  mode: 'edit', // edit | read
+  view: {
+    height: () => document.documentElement.clientHeight,
+    width: () => document.documentElement.clientWidth,
+  },
+
+
+
+
+
+sheeet.js
+
+  bind(window, 'resize', () => {
+    this.reload();
+  });
+
+  --->  target-window
+
+
+

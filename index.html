@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flex-splitter-directive@0.5.1/styles.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flex-splitter-directive@0.5.1"></script>
+
+</head>
+<body>
+
+<div
+  data-flex-splitter-vertical
+  style="height: 100vh; margin: 0;"
+>
+
+ <header style="max-height: 100px;">
+    header (max-height: 100px)
+  </header>
+
+  <div role="separator" tabindex="1"></div>
+
+  <main
+    data-flex-splitter-horizontal
+    style="flex: auto;"
+  >
+    <div style="width: 120px;">
+      width: 120px
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+
+    <div
+       data-flex-splitter-vertical
+       style="min-width: 80px;"
+     >
+      <div style="height: 4em;">min-width: 80px</div>
+      <div role="separator" tabindex="1"></div>
+      <div style="flex: auto;">flex: auto
+         <div id="app"></div>
+
+      </div>
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+<!--
+    <div id="x-spreadsheet-base" style="flex: auto; overflow: hidden;">
+-->
+    <div id="x-spreadsheet-base" style="flex: auto; ">
+
+         <div id="x-spreadsheet-demo" ></div>
+
+    </div>
+
+    <div role="separator" tabindex="1"></div>
+
+    <div style="min-width: 100px; max-width: 600px;">
+      min-width: 100px<br>max-width: 600px
+    </div>
+  </main>
+
+  <div role="separator" tabindex="1"></div>
+
+  <footer>footer</footer>
+
+
+  </div>
+
+  <script type="module" src="/main.js"></script>
+
+</body>
+</html>

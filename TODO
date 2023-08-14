@@ -1,0 +1,9 @@
+const target = document.querySelector('#x-spreadsheet-base');
+
+function resizeWindow(){
+    console.log('Resize');
+          s.reRender();
+}
+
+target.addEventListener('resize', resizeWindow);
+
